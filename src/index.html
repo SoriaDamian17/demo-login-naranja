@@ -58,9 +58,11 @@
   <script>
     window.addEventListener('load', function() {
 
-      var config = JSON.parse(
-        decodeURIComponent(escape(window.atob('@@config@@')))
-      );
+      var config = {
+        domain: 'dev-1zkkmzte.auth0.com',
+        clientID: 'I1WYc-WqSGIuaC7292pdnYyAuQQTt2DW',
+        callbackURL: 'http://localhost:3000/callback'
+      };
 
       var params = Object.assign({
         /* additional configuration needed for use of custom domains
